@@ -1,0 +1,2314 @@
+{
+  "questions": [
+    {
+      "display_order": 1,
+      "game_id": 14148,
+      "id": 139651,
+      "name": "What are your thoughts on... Size?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 6,
+          "id": 4953587,
+          "is_correct": false,
+          "name": "It doesn't matter. I just want a puppy!",
+          "promotion_id": 13854,
+          "question_id": 139651,
+          "question_option_outcome_weights": [
+
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953591,
+          "is_correct": false,
+          "name": "Medium; it's the perfect compromise.",
+          "promotion_id": 13854,
+          "question_id": 139651,
+          "question_option_outcome_weights": [
+            {
+              "id": 8167,
+              "outcome_id": 986,
+              "question_option_id": 4953591,
+              "selection_weight": 3
+            },
+            {
+              "id": 8168,
+              "outcome_id": 983,
+              "question_option_id": 4953591,
+              "selection_weight": 1
+            },
+            {
+              "id": 8169,
+              "outcome_id": 988,
+              "question_option_id": 4953591,
+              "selection_weight": 2
+            },
+            {
+              "id": 8170,
+              "outcome_id": 985,
+              "question_option_id": 4953591,
+              "selection_weight": 4
+            },
+            {
+              "id": 8171,
+              "outcome_id": 984,
+              "question_option_id": 4953591,
+              "selection_weight": 1
+            },
+            {
+              "id": 8172,
+              "outcome_id": 987,
+              "question_option_id": 4953591,
+              "selection_weight": 1
+            },
+            {
+              "id": 8173,
+              "outcome_id": 989,
+              "question_option_id": 4953591,
+              "selection_weight": 3
+            },
+            {
+              "id": 8174,
+              "outcome_id": 991,
+              "question_option_id": 4953591,
+              "selection_weight": 2
+            },
+            {
+              "id": 8175,
+              "outcome_id": 990,
+              "question_option_id": 4953591,
+              "selection_weight": 2
+            },
+            {
+              "id": 8176,
+              "outcome_id": 993,
+              "question_option_id": 4953591,
+              "selection_weight": 3
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 1,
+          "id": 4953601,
+          "is_correct": false,
+          "name": "Small please.",
+          "promotion_id": 13854,
+          "question_id": 139651,
+          "question_option_outcome_weights": [
+            {
+              "id": 8200,
+              "outcome_id": 986,
+              "question_option_id": 4953601,
+              "selection_weight": 3
+            },
+            {
+              "id": 8201,
+              "outcome_id": 985,
+              "question_option_id": 4953601,
+              "selection_weight": 3
+            },
+            {
+              "id": 8202,
+              "outcome_id": 991,
+              "question_option_id": 4953601,
+              "selection_weight": 5
+            },
+            {
+              "id": 8203,
+              "outcome_id": 990,
+              "question_option_id": 4953601,
+              "selection_weight": 4
+            },
+            {
+              "id": 8204,
+              "outcome_id": 992,
+              "question_option_id": 4953601,
+              "selection_weight": 10
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 5,
+          "id": 4953605,
+          "is_correct": false,
+          "name": "The only kind of dog is a large one.",
+          "promotion_id": 13854,
+          "question_id": 139651,
+          "question_option_outcome_weights": [
+            {
+              "id": 8229,
+              "outcome_id": 983,
+              "question_option_id": 4953605,
+              "selection_weight": 5
+            },
+            {
+              "id": 8230,
+              "outcome_id": 984,
+              "question_option_id": 4953605,
+              "selection_weight": 5
+            },
+            {
+              "id": 8231,
+              "outcome_id": 986,
+              "question_option_id": 4953605,
+              "selection_weight": 1
+            },
+            {
+              "id": 8232,
+              "outcome_id": 987,
+              "question_option_id": 4953605,
+              "selection_weight": 5
+            },
+            {
+              "id": 8233,
+              "outcome_id": 989,
+              "question_option_id": 4953605,
+              "selection_weight": 2
+            },
+            {
+              "id": 8234,
+              "outcome_id": 993,
+              "question_option_id": 4953605,
+              "selection_weight": 2
+            },
+            {
+              "id": 8235,
+              "outcome_id": 988,
+              "question_option_id": 4953605,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 2,
+      "game_id": 14148,
+      "id": 139652,
+      "name": "What are your thoughts on... Walks?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 3,
+          "id": 4953557,
+          "is_correct": false,
+          "name": "A couple peaceful walks without people asking 'Who's walking who?'",
+          "promotion_id": 13854,
+          "question_id": 139652,
+          "question_option_outcome_weights": [
+            {
+              "id": 7968,
+              "outcome_id": 983,
+              "question_option_id": 4953557,
+              "selection_weight": 3
+            },
+            {
+              "id": 7969,
+              "outcome_id": 984,
+              "question_option_id": 4953557,
+              "selection_weight": 4
+            },
+            {
+              "id": 7970,
+              "outcome_id": 987,
+              "question_option_id": 4953557,
+              "selection_weight": 3
+            },
+            {
+              "id": 7971,
+              "outcome_id": 988,
+              "question_option_id": 4953557,
+              "selection_weight": 3
+            },
+            {
+              "id": 7972,
+              "outcome_id": 989,
+              "question_option_id": 4953557,
+              "selection_weight": 4
+            },
+            {
+              "id": 7973,
+              "outcome_id": 986,
+              "question_option_id": 4953557,
+              "selection_weight": 1
+            },
+            {
+              "id": 7974,
+              "outcome_id": 993,
+              "question_option_id": 4953557,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 2,
+          "id": 4953580,
+          "is_correct": false,
+          "name": "I would love one solid walk per day.",
+          "promotion_id": 13854,
+          "question_id": 139652,
+          "question_option_outcome_weights": [
+            {
+              "id": 8104,
+              "outcome_id": 989,
+              "question_option_id": 4953580,
+              "selection_weight": 1
+            },
+            {
+              "id": 8105,
+              "outcome_id": 987,
+              "question_option_id": 4953580,
+              "selection_weight": 1
+            },
+            {
+              "id": 8106,
+              "outcome_id": 983,
+              "question_option_id": 4953580,
+              "selection_weight": 1
+            },
+            {
+              "id": 8107,
+              "outcome_id": 985,
+              "question_option_id": 4953580,
+              "selection_weight": 4
+            },
+            {
+              "id": 8108,
+              "outcome_id": 984,
+              "question_option_id": 4953580,
+              "selection_weight": 1
+            },
+            {
+              "id": 8109,
+              "outcome_id": 986,
+              "question_option_id": 4953580,
+              "selection_weight": 2
+            },
+            {
+              "id": 8110,
+              "outcome_id": 990,
+              "question_option_id": 4953580,
+              "selection_weight": 4
+            },
+            {
+              "id": 8111,
+              "outcome_id": 991,
+              "question_option_id": 4953580,
+              "selection_weight": 4
+            },
+            {
+              "id": 8112,
+              "outcome_id": 993,
+              "question_option_id": 4953580,
+              "selection_weight": 1
+            },
+            {
+              "id": 8113,
+              "outcome_id": 992,
+              "question_option_id": 4953580,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953599,
+          "is_correct": false,
+          "name": "Rain or shine, I'm ready.",
+          "promotion_id": 13854,
+          "question_id": 139652,
+          "question_option_outcome_weights": [
+            {
+              "id": 8190,
+              "outcome_id": 988,
+              "question_option_id": 4953599,
+              "selection_weight": 5
+            },
+            {
+              "id": 8191,
+              "outcome_id": 984,
+              "question_option_id": 4953599,
+              "selection_weight": 5
+            },
+            {
+              "id": 8192,
+              "outcome_id": 983,
+              "question_option_id": 4953599,
+              "selection_weight": 5
+            },
+            {
+              "id": 8193,
+              "outcome_id": 989,
+              "question_option_id": 4953599,
+              "selection_weight": 5
+            },
+            {
+              "id": 8194,
+              "outcome_id": 987,
+              "question_option_id": 4953599,
+              "selection_weight": 2
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 1,
+          "id": 4953600,
+          "is_correct": false,
+          "name": "Really\u00a0only\u00a0have time for quick pee breaks.",
+          "promotion_id": 13854,
+          "question_id": 139652,
+          "question_option_outcome_weights": [
+            {
+              "id": 8195,
+              "outcome_id": 991,
+              "question_option_id": 4953600,
+              "selection_weight": 2
+            },
+            {
+              "id": 8196,
+              "outcome_id": 985,
+              "question_option_id": 4953600,
+              "selection_weight": 2
+            },
+            {
+              "id": 8197,
+              "outcome_id": 990,
+              "question_option_id": 4953600,
+              "selection_weight": 3
+            },
+            {
+              "id": 8198,
+              "outcome_id": 986,
+              "question_option_id": 4953600,
+              "selection_weight": 1
+            },
+            {
+              "id": 8199,
+              "outcome_id": 992,
+              "question_option_id": 4953600,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 3,
+      "game_id": 14148,
+      "id": 139653,
+      "name": "What are your thoughts on... Running?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 1,
+          "id": 4953564,
+          "is_correct": false,
+          "name": "Hah.",
+          "promotion_id": 13854,
+          "question_id": 139653,
+          "question_option_outcome_weights": [
+            {
+              "id": 8013,
+              "outcome_id": 985,
+              "question_option_id": 4953564,
+              "selection_weight": 3
+            },
+            {
+              "id": 8014,
+              "outcome_id": 992,
+              "question_option_id": 4953564,
+              "selection_weight": 5
+            },
+            {
+              "id": 8015,
+              "outcome_id": 986,
+              "question_option_id": 4953564,
+              "selection_weight": 5
+            },
+            {
+              "id": 8016,
+              "outcome_id": 991,
+              "question_option_id": 4953564,
+              "selection_weight": 3
+            },
+            {
+              "id": 8017,
+              "outcome_id": 990,
+              "question_option_id": 4953564,
+              "selection_weight": 5
+            },
+            {
+              "id": 8018,
+              "outcome_id": 988,
+              "question_option_id": 4953564,
+              "selection_weight": 3
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953575,
+          "is_correct": false,
+          "name": "I need a running partner to get me in shape.",
+          "promotion_id": 13854,
+          "question_id": 139653,
+          "question_option_outcome_weights": [
+            {
+              "id": 8065,
+              "outcome_id": 983,
+              "question_option_id": 4953575,
+              "selection_weight": 4
+            },
+            {
+              "id": 8066,
+              "outcome_id": 987,
+              "question_option_id": 4953575,
+              "selection_weight": 5
+            },
+            {
+              "id": 8067,
+              "outcome_id": 984,
+              "question_option_id": 4953575,
+              "selection_weight": 5
+            },
+            {
+              "id": 8068,
+              "outcome_id": 988,
+              "question_option_id": 4953575,
+              "selection_weight": 0
+            },
+            {
+              "id": 8069,
+              "outcome_id": 993,
+              "question_option_id": 4953575,
+              "selection_weight": 3
+            },
+            {
+              "id": 8070,
+              "outcome_id": 989,
+              "question_option_id": 4953575,
+              "selection_weight": 5
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953578,
+          "is_correct": false,
+          "name": "I run everyday so my pup better keep up.",
+          "promotion_id": 13854,
+          "question_id": 139653,
+          "question_option_outcome_weights": [
+            {
+              "id": 8092,
+              "outcome_id": 983,
+              "question_option_id": 4953578,
+              "selection_weight": 3
+            },
+            {
+              "id": 8093,
+              "outcome_id": 987,
+              "question_option_id": 4953578,
+              "selection_weight": 3
+            },
+            {
+              "id": 8094,
+              "outcome_id": 984,
+              "question_option_id": 4953578,
+              "selection_weight": 3
+            },
+            {
+              "id": 8095,
+              "outcome_id": 989,
+              "question_option_id": 4953578,
+              "selection_weight": 5
+            },
+            {
+              "id": 8096,
+              "outcome_id": 993,
+              "question_option_id": 4953578,
+              "selection_weight": 5
+            },
+            {
+              "id": 8097,
+              "outcome_id": 988,
+              "question_option_id": 4953578,
+              "selection_weight": 0
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 2,
+          "id": 4953604,
+          "is_correct": false,
+          "name": "The occasional run would be great.",
+          "promotion_id": 13854,
+          "question_id": 139653,
+          "question_option_outcome_weights": [
+            {
+              "id": 8221,
+              "outcome_id": 983,
+              "question_option_id": 4953604,
+              "selection_weight": 4
+            },
+            {
+              "id": 8222,
+              "outcome_id": 984,
+              "question_option_id": 4953604,
+              "selection_weight": 3
+            },
+            {
+              "id": 8223,
+              "outcome_id": 987,
+              "question_option_id": 4953604,
+              "selection_weight": 3
+            },
+            {
+              "id": 8224,
+              "outcome_id": 989,
+              "question_option_id": 4953604,
+              "selection_weight": 4
+            },
+            {
+              "id": 8225,
+              "outcome_id": 986,
+              "question_option_id": 4953604,
+              "selection_weight": 2
+            },
+            {
+              "id": 8226,
+              "outcome_id": 985,
+              "question_option_id": 4953604,
+              "selection_weight": 2
+            },
+            {
+              "id": 8227,
+              "outcome_id": 991,
+              "question_option_id": 4953604,
+              "selection_weight": 3
+            },
+            {
+              "id": 8228,
+              "outcome_id": 993,
+              "question_option_id": 4953604,
+              "selection_weight": 3
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 4,
+      "game_id": 14148,
+      "id": 139654,
+      "name": "What are your thoughts on... Shedding?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 1,
+          "id": 4953565,
+          "is_correct": false,
+          "name": "Hair all over my clothes? Ew.",
+          "promotion_id": 13854,
+          "question_id": 139654,
+          "question_option_outcome_weights": [
+            {
+              "id": 8019,
+              "outcome_id": 990,
+              "question_option_id": 4953565,
+              "selection_weight": 2
+            },
+            {
+              "id": 8020,
+              "outcome_id": 988,
+              "question_option_id": 4953565,
+              "selection_weight": 4
+            },
+            {
+              "id": 8021,
+              "outcome_id": 986,
+              "question_option_id": 4953565,
+              "selection_weight": 4
+            },
+            {
+              "id": 8022,
+              "outcome_id": 992,
+              "question_option_id": 4953565,
+              "selection_weight": 4
+            },
+            {
+              "id": 8023,
+              "outcome_id": 991,
+              "question_option_id": 4953565,
+              "selection_weight": 1
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953573,
+          "is_correct": false,
+          "name": "I just got the new Dyson 3000 and I'm ready!",
+          "promotion_id": 13854,
+          "question_id": 139654,
+          "question_option_outcome_weights": [
+            {
+              "id": 8056,
+              "outcome_id": 983,
+              "question_option_id": 4953573,
+              "selection_weight": 3
+            },
+            {
+              "id": 8057,
+              "outcome_id": 985,
+              "question_option_id": 4953573,
+              "selection_weight": 2
+            },
+            {
+              "id": 8058,
+              "outcome_id": 989,
+              "question_option_id": 4953573,
+              "selection_weight": 4
+            },
+            {
+              "id": 8059,
+              "outcome_id": 987,
+              "question_option_id": 4953573,
+              "selection_weight": 4
+            },
+            {
+              "id": 8060,
+              "outcome_id": 986,
+              "question_option_id": 4953573,
+              "selection_weight": 1
+            },
+            {
+              "id": 8061,
+              "outcome_id": 984,
+              "question_option_id": 4953573,
+              "selection_weight": 4
+            },
+            {
+              "id": 8062,
+              "outcome_id": 990,
+              "question_option_id": 4953573,
+              "selection_weight": 1
+            },
+            {
+              "id": 8063,
+              "outcome_id": 993,
+              "question_option_id": 4953573,
+              "selection_weight": 4
+            },
+            {
+              "id": 8064,
+              "outcome_id": 991,
+              "question_option_id": 4953573,
+              "selection_weight": 1
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 2,
+          "id": 4953581,
+          "is_correct": false,
+          "name": "I would prefer to deal with it as little as possible.",
+          "promotion_id": 13854,
+          "question_id": 139654,
+          "question_option_outcome_weights": [
+            {
+              "id": 8114,
+              "outcome_id": 986,
+              "question_option_id": 4953581,
+              "selection_weight": 3
+            },
+            {
+              "id": 8115,
+              "outcome_id": 988,
+              "question_option_id": 4953581,
+              "selection_weight": 3
+            },
+            {
+              "id": 8116,
+              "outcome_id": 992,
+              "question_option_id": 4953581,
+              "selection_weight": 3
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953585,
+          "is_correct": false,
+          "name": "I'm prepared for the occasional vacuum.",
+          "promotion_id": 13854,
+          "question_id": 139654,
+          "question_option_outcome_weights": [
+            {
+              "id": 8137,
+              "outcome_id": 983,
+              "question_option_id": 4953585,
+              "selection_weight": 1
+            },
+            {
+              "id": 8138,
+              "outcome_id": 984,
+              "question_option_id": 4953585,
+              "selection_weight": 2
+            },
+            {
+              "id": 8139,
+              "outcome_id": 985,
+              "question_option_id": 4953585,
+              "selection_weight": 3
+            },
+            {
+              "id": 8140,
+              "outcome_id": 986,
+              "question_option_id": 4953585,
+              "selection_weight": 2
+            },
+            {
+              "id": 8141,
+              "outcome_id": 988,
+              "question_option_id": 4953585,
+              "selection_weight": 3
+            },
+            {
+              "id": 8142,
+              "outcome_id": 989,
+              "question_option_id": 4953585,
+              "selection_weight": 1
+            },
+            {
+              "id": 8143,
+              "outcome_id": 987,
+              "question_option_id": 4953585,
+              "selection_weight": 1
+            },
+            {
+              "id": 8144,
+              "outcome_id": 990,
+              "question_option_id": 4953585,
+              "selection_weight": 3
+            },
+            {
+              "id": 8145,
+              "outcome_id": 991,
+              "question_option_id": 4953585,
+              "selection_weight": 3
+            },
+            {
+              "id": 8146,
+              "outcome_id": 992,
+              "question_option_id": 4953585,
+              "selection_weight": 1
+            },
+            {
+              "id": 8147,
+              "outcome_id": 993,
+              "question_option_id": 4953585,
+              "selection_weight": 1
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 5,
+      "game_id": 14148,
+      "id": 139655,
+      "name": "What are your thoughts on... Drooling?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 2,
+          "id": 4953567,
+          "is_correct": false,
+          "name": "Honestly... it's a little gross.",
+          "promotion_id": 13854,
+          "question_id": 139655,
+          "question_option_outcome_weights": [
+            {
+              "id": 8028,
+              "outcome_id": 985,
+              "question_option_id": 4953567,
+              "selection_weight": 4
+            },
+            {
+              "id": 8029,
+              "outcome_id": 988,
+              "question_option_id": 4953567,
+              "selection_weight": 1
+            },
+            {
+              "id": 8030,
+              "outcome_id": 990,
+              "question_option_id": 4953567,
+              "selection_weight": 4
+            },
+            {
+              "id": 8031,
+              "outcome_id": 989,
+              "question_option_id": 4953567,
+              "selection_weight": 2
+            },
+            {
+              "id": 8032,
+              "outcome_id": 991,
+              "question_option_id": 4953567,
+              "selection_weight": 4
+            },
+            {
+              "id": 8033,
+              "outcome_id": 992,
+              "question_option_id": 4953567,
+              "selection_weight": 2
+            },
+            {
+              "id": 8034,
+              "outcome_id": 993,
+              "question_option_id": 4953567,
+              "selection_weight": 2
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953582,
+          "is_correct": false,
+          "name": "If it's a hot day, I understand.",
+          "promotion_id": 13854,
+          "question_id": 139655,
+          "question_option_outcome_weights": [
+            {
+              "id": 8117,
+              "outcome_id": 984,
+              "question_option_id": 4953582,
+              "selection_weight": 3
+            },
+            {
+              "id": 8118,
+              "outcome_id": 988,
+              "question_option_id": 4953582,
+              "selection_weight": 3
+            },
+            {
+              "id": 8119,
+              "outcome_id": 987,
+              "question_option_id": 4953582,
+              "selection_weight": 3
+            },
+            {
+              "id": 8120,
+              "outcome_id": 983,
+              "question_option_id": 4953582,
+              "selection_weight": 3
+            },
+            {
+              "id": 8121,
+              "outcome_id": 989,
+              "question_option_id": 4953582,
+              "selection_weight": 4
+            },
+            {
+              "id": 8122,
+              "outcome_id": 993,
+              "question_option_id": 4953582,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 1,
+          "id": 4953593,
+          "is_correct": false,
+          "name": "No. Absolutely not.",
+          "promotion_id": 13854,
+          "question_id": 139655,
+          "question_option_outcome_weights": [
+
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953603,
+          "is_correct": false,
+          "name": "The more slobber on me the more my dog loves me.",
+          "promotion_id": 13854,
+          "question_id": 139655,
+          "question_option_outcome_weights": [
+            {
+              "id": 8216,
+              "outcome_id": 983,
+              "question_option_id": 4953603,
+              "selection_weight": 4
+            },
+            {
+              "id": 8217,
+              "outcome_id": 987,
+              "question_option_id": 4953603,
+              "selection_weight": 4
+            },
+            {
+              "id": 8218,
+              "outcome_id": 984,
+              "question_option_id": 4953603,
+              "selection_weight": 4
+            },
+            {
+              "id": 8219,
+              "outcome_id": 988,
+              "question_option_id": 4953603,
+              "selection_weight": 1
+            },
+            {
+              "id": 8220,
+              "outcome_id": 986,
+              "question_option_id": 4953603,
+              "selection_weight": 10
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 6,
+      "game_id": 14148,
+      "id": 139657,
+      "name": "What are your thoughts on... Training?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 3,
+          "id": 4953576,
+          "is_correct": false,
+          "name": "I plan to do the basics and that's about it.",
+          "promotion_id": 13854,
+          "question_id": 139657,
+          "question_option_outcome_weights": [
+            {
+              "id": 8071,
+              "outcome_id": 983,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            },
+            {
+              "id": 8072,
+              "outcome_id": 984,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            },
+            {
+              "id": 8073,
+              "outcome_id": 985,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            },
+            {
+              "id": 8074,
+              "outcome_id": 986,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            },
+            {
+              "id": 8075,
+              "outcome_id": 987,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            },
+            {
+              "id": 8076,
+              "outcome_id": 989,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            },
+            {
+              "id": 8077,
+              "outcome_id": 990,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            },
+            {
+              "id": 8078,
+              "outcome_id": 988,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            },
+            {
+              "id": 8079,
+              "outcome_id": 992,
+              "question_option_id": 4953576,
+              "selection_weight": 2
+            },
+            {
+              "id": 8080,
+              "outcome_id": 991,
+              "question_option_id": 4953576,
+              "selection_weight": 3
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 2,
+          "id": 4953579,
+          "is_correct": false,
+          "name": "I would like my pup to be easy to train.",
+          "promotion_id": 13854,
+          "question_id": 139657,
+          "question_option_outcome_weights": [
+            {
+              "id": 8098,
+              "outcome_id": 990,
+              "question_option_id": 4953579,
+              "selection_weight": 2
+            },
+            {
+              "id": 8099,
+              "outcome_id": 989,
+              "question_option_id": 4953579,
+              "selection_weight": 4
+            },
+            {
+              "id": 8100,
+              "outcome_id": 984,
+              "question_option_id": 4953579,
+              "selection_weight": 4
+            },
+            {
+              "id": 8101,
+              "outcome_id": 991,
+              "question_option_id": 4953579,
+              "selection_weight": 3
+            },
+            {
+              "id": 8102,
+              "outcome_id": 993,
+              "question_option_id": 4953579,
+              "selection_weight": 4
+            },
+            {
+              "id": 8103,
+              "outcome_id": 987,
+              "question_option_id": 4953579,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953584,
+          "is_correct": false,
+          "name": "I'm already planning out all the fun tricks to teach my pup.",
+          "promotion_id": 13854,
+          "question_id": 139657,
+          "question_option_outcome_weights": [
+            {
+              "id": 8132,
+              "outcome_id": 983,
+              "question_option_id": 4953584,
+              "selection_weight": 4
+            },
+            {
+              "id": 8133,
+              "outcome_id": 984,
+              "question_option_id": 4953584,
+              "selection_weight": 4
+            },
+            {
+              "id": 8134,
+              "outcome_id": 989,
+              "question_option_id": 4953584,
+              "selection_weight": 5
+            },
+            {
+              "id": 8135,
+              "outcome_id": 987,
+              "question_option_id": 4953584,
+              "selection_weight": 4
+            },
+            {
+              "id": 8136,
+              "outcome_id": 993,
+              "question_option_id": 4953584,
+              "selection_weight": 10
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 1,
+          "id": 4953607,
+          "is_correct": false,
+          "name": "Wait, you have to train dogs?",
+          "promotion_id": 13854,
+          "question_id": 139657,
+          "question_option_outcome_weights": [
+
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 7,
+      "game_id": 14148,
+      "id": 139658,
+      "name": "What are your thoughts on... Fetch?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 2,
+          "id": 4953570,
+          "is_correct": false,
+          "name": "I could do the occasional game of fetch.",
+          "promotion_id": 13854,
+          "question_id": 139658,
+          "question_option_outcome_weights": [
+            {
+              "id": 8044,
+              "outcome_id": 985,
+              "question_option_id": 4953570,
+              "selection_weight": 4
+            },
+            {
+              "id": 8045,
+              "outcome_id": 986,
+              "question_option_id": 4953570,
+              "selection_weight": 4
+            },
+            {
+              "id": 8046,
+              "outcome_id": 992,
+              "question_option_id": 4953570,
+              "selection_weight": 4
+            },
+            {
+              "id": 8047,
+              "outcome_id": 990,
+              "question_option_id": 4953570,
+              "selection_weight": 4
+            },
+            {
+              "id": 8048,
+              "outcome_id": 988,
+              "question_option_id": 4953570,
+              "selection_weight": 4
+            },
+            {
+              "id": 8049,
+              "outcome_id": 991,
+              "question_option_id": 4953570,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953572,
+          "is_correct": false,
+          "name": "I dream about playing frisbee with my dog.",
+          "promotion_id": 13854,
+          "question_id": 139658,
+          "question_option_outcome_weights": [
+            {
+              "id": 8051,
+              "outcome_id": 983,
+              "question_option_id": 4953572,
+              "selection_weight": 10
+            },
+            {
+              "id": 8052,
+              "outcome_id": 993,
+              "question_option_id": 4953572,
+              "selection_weight": 4
+            },
+            {
+              "id": 8053,
+              "outcome_id": 984,
+              "question_option_id": 4953572,
+              "selection_weight": 4
+            },
+            {
+              "id": 8054,
+              "outcome_id": 987,
+              "question_option_id": 4953572,
+              "selection_weight": 3
+            },
+            {
+              "id": 8055,
+              "outcome_id": 989,
+              "question_option_id": 4953572,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953583,
+          "is_correct": false,
+          "name": "If my pup wants to, I'm down.",
+          "promotion_id": 13854,
+          "question_id": 139658,
+          "question_option_outcome_weights": [
+            {
+              "id": 8123,
+              "outcome_id": 983,
+              "question_option_id": 4953583,
+              "selection_weight": 5
+            },
+            {
+              "id": 8124,
+              "outcome_id": 984,
+              "question_option_id": 4953583,
+              "selection_weight": 3
+            },
+            {
+              "id": 8125,
+              "outcome_id": 986,
+              "question_option_id": 4953583,
+              "selection_weight": 1
+            },
+            {
+              "id": 8126,
+              "outcome_id": 987,
+              "question_option_id": 4953583,
+              "selection_weight": 3
+            },
+            {
+              "id": 8127,
+              "outcome_id": 988,
+              "question_option_id": 4953583,
+              "selection_weight": 1
+            },
+            {
+              "id": 8128,
+              "outcome_id": 985,
+              "question_option_id": 4953583,
+              "selection_weight": 3
+            },
+            {
+              "id": 8129,
+              "outcome_id": 989,
+              "question_option_id": 4953583,
+              "selection_weight": 3
+            },
+            {
+              "id": 8130,
+              "outcome_id": 991,
+              "question_option_id": 4953583,
+              "selection_weight": 1
+            },
+            {
+              "id": 8131,
+              "outcome_id": 993,
+              "question_option_id": 4953583,
+              "selection_weight": 3
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 1,
+          "id": 4953595,
+          "is_correct": false,
+          "name": "Not really interested.",
+          "promotion_id": 13854,
+          "question_id": 139658,
+          "question_option_outcome_weights": [
+            {
+              "id": 8183,
+              "outcome_id": 988,
+              "question_option_id": 4953595,
+              "selection_weight": 2
+            },
+            {
+              "id": 8184,
+              "outcome_id": 992,
+              "question_option_id": 4953595,
+              "selection_weight": 2
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 8,
+      "game_id": 14148,
+      "id": 139659,
+      "name": "What are your thoughts on... Barking?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 1,
+          "id": 4953571,
+          "is_correct": false,
+          "name": "I don't want to hear it.",
+          "promotion_id": 13854,
+          "question_id": 139659,
+          "question_option_outcome_weights": [
+            {
+              "id": 8050,
+              "outcome_id": 992,
+              "question_option_id": 4953571,
+              "selection_weight": 1
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 2,
+          "id": 4953577,
+          "is_correct": false,
+          "name": "I realize dogs bark and I'm alright with the occasional 'Hello.'",
+          "promotion_id": 13854,
+          "question_id": 139659,
+          "question_option_outcome_weights": [
+            {
+              "id": 8081,
+              "outcome_id": 986,
+              "question_option_id": 4953577,
+              "selection_weight": 4
+            },
+            {
+              "id": 8082,
+              "outcome_id": 984,
+              "question_option_id": 4953577,
+              "selection_weight": 1
+            },
+            {
+              "id": 8083,
+              "outcome_id": 983,
+              "question_option_id": 4953577,
+              "selection_weight": 1
+            },
+            {
+              "id": 8084,
+              "outcome_id": 985,
+              "question_option_id": 4953577,
+              "selection_weight": 1
+            },
+            {
+              "id": 8085,
+              "outcome_id": 987,
+              "question_option_id": 4953577,
+              "selection_weight": 1
+            },
+            {
+              "id": 8086,
+              "outcome_id": 990,
+              "question_option_id": 4953577,
+              "selection_weight": 4
+            },
+            {
+              "id": 8087,
+              "outcome_id": 989,
+              "question_option_id": 4953577,
+              "selection_weight": 4
+            },
+            {
+              "id": 8088,
+              "outcome_id": 988,
+              "question_option_id": 4953577,
+              "selection_weight": 4
+            },
+            {
+              "id": 8089,
+              "outcome_id": 991,
+              "question_option_id": 4953577,
+              "selection_weight": 4
+            },
+            {
+              "id": 8090,
+              "outcome_id": 992,
+              "question_option_id": 4953577,
+              "selection_weight": 4
+            },
+            {
+              "id": 8091,
+              "outcome_id": 993,
+              "question_option_id": 4953577,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953588,
+          "is_correct": false,
+          "name": "It's fine. Woof! Woof!",
+          "promotion_id": 13854,
+          "question_id": 139659,
+          "question_option_outcome_weights": [
+            {
+              "id": 8153,
+              "outcome_id": 983,
+              "question_option_id": 4953588,
+              "selection_weight": 5
+            },
+            {
+              "id": 8154,
+              "outcome_id": 984,
+              "question_option_id": 4953588,
+              "selection_weight": 5
+            },
+            {
+              "id": 8155,
+              "outcome_id": 985,
+              "question_option_id": 4953588,
+              "selection_weight": 5
+            },
+            {
+              "id": 8156,
+              "outcome_id": 987,
+              "question_option_id": 4953588,
+              "selection_weight": 2
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953597,
+          "is_correct": false,
+          "name": "Nothing better than a dog howling at the moon.",
+          "promotion_id": 13854,
+          "question_id": 139659,
+          "question_option_outcome_weights": [
+            {
+              "id": 8187,
+              "outcome_id": 987,
+              "question_option_id": 4953597,
+              "selection_weight": 10
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 9,
+      "game_id": 14148,
+      "id": 139660,
+      "name": "What are your thoughts on... Dog Parks?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 2,
+          "id": 4953558,
+          "is_correct": false,
+          "name": "A must; My dog needs to be social.",
+          "promotion_id": 13854,
+          "question_id": 139660,
+          "question_option_outcome_weights": [
+            {
+              "id": 7975,
+              "outcome_id": 985,
+              "question_option_id": 4953558,
+              "selection_weight": 4
+            },
+            {
+              "id": 7976,
+              "outcome_id": 983,
+              "question_option_id": 4953558,
+              "selection_weight": 5
+            },
+            {
+              "id": 7977,
+              "outcome_id": 984,
+              "question_option_id": 4953558,
+              "selection_weight": 5
+            },
+            {
+              "id": 7978,
+              "outcome_id": 987,
+              "question_option_id": 4953558,
+              "selection_weight": 4
+            },
+            {
+              "id": 7979,
+              "outcome_id": 989,
+              "question_option_id": 4953558,
+              "selection_weight": 5
+            },
+            {
+              "id": 7980,
+              "outcome_id": 990,
+              "question_option_id": 4953558,
+              "selection_weight": 1
+            },
+            {
+              "id": 7981,
+              "outcome_id": 991,
+              "question_option_id": 4953558,
+              "selection_weight": 2
+            },
+            {
+              "id": 7982,
+              "outcome_id": 993,
+              "question_option_id": 4953558,
+              "selection_weight": 5
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953561,
+          "is_correct": false,
+          "name": "Every once in awhile sounds good to me.",
+          "promotion_id": 13854,
+          "question_id": 139660,
+          "question_option_outcome_weights": [
+            {
+              "id": 7995,
+              "outcome_id": 983,
+              "question_option_id": 4953561,
+              "selection_weight": 2
+            },
+            {
+              "id": 7996,
+              "outcome_id": 984,
+              "question_option_id": 4953561,
+              "selection_weight": 4
+            },
+            {
+              "id": 7997,
+              "outcome_id": 985,
+              "question_option_id": 4953561,
+              "selection_weight": 4
+            },
+            {
+              "id": 7998,
+              "outcome_id": 986,
+              "question_option_id": 4953561,
+              "selection_weight": 4
+            },
+            {
+              "id": 7999,
+              "outcome_id": 987,
+              "question_option_id": 4953561,
+              "selection_weight": 2
+            },
+            {
+              "id": 8000,
+              "outcome_id": 988,
+              "question_option_id": 4953561,
+              "selection_weight": 2
+            },
+            {
+              "id": 8001,
+              "outcome_id": 989,
+              "question_option_id": 4953561,
+              "selection_weight": 2
+            },
+            {
+              "id": 8002,
+              "outcome_id": 990,
+              "question_option_id": 4953561,
+              "selection_weight": 4
+            },
+            {
+              "id": 8003,
+              "outcome_id": 991,
+              "question_option_id": 4953561,
+              "selection_weight": 4
+            },
+            {
+              "id": 8004,
+              "outcome_id": 993,
+              "question_option_id": 4953561,
+              "selection_weight": 2
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953592,
+          "is_correct": false,
+          "name": "My backyard is more convenient.",
+          "promotion_id": 13854,
+          "question_id": 139660,
+          "question_option_outcome_weights": [
+            {
+              "id": 8177,
+              "outcome_id": 988,
+              "question_option_id": 4953592,
+              "selection_weight": 10
+            },
+            {
+              "id": 8178,
+              "outcome_id": 987,
+              "question_option_id": 4953592,
+              "selection_weight": 4
+            },
+            {
+              "id": 8179,
+              "outcome_id": 983,
+              "question_option_id": 4953592,
+              "selection_weight": 4
+            },
+            {
+              "id": 8180,
+              "outcome_id": 993,
+              "question_option_id": 4953592,
+              "selection_weight": 4
+            },
+            {
+              "id": 8181,
+              "outcome_id": 989,
+              "question_option_id": 4953592,
+              "selection_weight": 4
+            },
+            {
+              "id": 8182,
+              "outcome_id": 984,
+              "question_option_id": 4953592,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 1,
+          "id": 4953596,
+          "is_correct": false,
+          "name": "Not really planning on doing that.",
+          "promotion_id": 13854,
+          "question_id": 139660,
+          "question_option_outcome_weights": [
+            {
+              "id": 8185,
+              "outcome_id": 986,
+              "question_option_id": 4953596,
+              "selection_weight": 3
+            },
+            {
+              "id": 8186,
+              "outcome_id": 992,
+              "question_option_id": 4953596,
+              "selection_weight": 5
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 10,
+      "game_id": 14148,
+      "id": 139661,
+      "name": "What are your thoughts on.... Other Pets?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 2,
+          "id": 4953568,
+          "is_correct": false,
+          "name": "I already have a cat.",
+          "promotion_id": 13854,
+          "question_id": 139661,
+          "question_option_outcome_weights": [
+
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 1,
+          "id": 4953569,
+          "is_correct": false,
+          "name": "I already have another dog.",
+          "promotion_id": 13854,
+          "question_id": 139661,
+          "question_option_outcome_weights": [
+            {
+              "id": 8035,
+              "outcome_id": 983,
+              "question_option_id": 4953569,
+              "selection_weight": 4
+            },
+            {
+              "id": 8036,
+              "outcome_id": 985,
+              "question_option_id": 4953569,
+              "selection_weight": 3
+            },
+            {
+              "id": 8037,
+              "outcome_id": 989,
+              "question_option_id": 4953569,
+              "selection_weight": 3
+            },
+            {
+              "id": 8038,
+              "outcome_id": 986,
+              "question_option_id": 4953569,
+              "selection_weight": 2
+            },
+            {
+              "id": 8039,
+              "outcome_id": 984,
+              "question_option_id": 4953569,
+              "selection_weight": 3
+            },
+            {
+              "id": 8040,
+              "outcome_id": 990,
+              "question_option_id": 4953569,
+              "selection_weight": 3
+            },
+            {
+              "id": 8041,
+              "outcome_id": 991,
+              "question_option_id": 4953569,
+              "selection_weight": 3
+            },
+            {
+              "id": 8042,
+              "outcome_id": 992,
+              "question_option_id": 4953569,
+              "selection_weight": 3
+            },
+            {
+              "id": 8043,
+              "outcome_id": 993,
+              "question_option_id": 4953569,
+              "selection_weight": 3
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953602,
+          "is_correct": false,
+          "name": "The more puppies, the better!",
+          "promotion_id": 13854,
+          "question_id": 139661,
+          "question_option_outcome_weights": [
+            {
+              "id": 8205,
+              "outcome_id": 983,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8206,
+              "outcome_id": 984,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8207,
+              "outcome_id": 985,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8208,
+              "outcome_id": 987,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8209,
+              "outcome_id": 986,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8210,
+              "outcome_id": 988,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8211,
+              "outcome_id": 990,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8212,
+              "outcome_id": 989,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8213,
+              "outcome_id": 991,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8214,
+              "outcome_id": 992,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            },
+            {
+              "id": 8215,
+              "outcome_id": 993,
+              "question_option_id": 4953602,
+              "selection_weight": 3
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953606,
+          "is_correct": false,
+          "name": "This pup is the only one I need.",
+          "promotion_id": 13854,
+          "question_id": 139661,
+          "question_option_outcome_weights": [
+            {
+              "id": 8236,
+              "outcome_id": 985,
+              "question_option_id": 4953606,
+              "selection_weight": 1
+            },
+            {
+              "id": 8237,
+              "outcome_id": 983,
+              "question_option_id": 4953606,
+              "selection_weight": 2
+            },
+            {
+              "id": 8238,
+              "outcome_id": 987,
+              "question_option_id": 4953606,
+              "selection_weight": 3
+            },
+            {
+              "id": 8239,
+              "outcome_id": 986,
+              "question_option_id": 4953606,
+              "selection_weight": 2
+            },
+            {
+              "id": 8240,
+              "outcome_id": 984,
+              "question_option_id": 4953606,
+              "selection_weight": 1
+            },
+            {
+              "id": 8241,
+              "outcome_id": 988,
+              "question_option_id": 4953606,
+              "selection_weight": 3
+            },
+            {
+              "id": 8242,
+              "outcome_id": 989,
+              "question_option_id": 4953606,
+              "selection_weight": 1
+            },
+            {
+              "id": 8243,
+              "outcome_id": 990,
+              "question_option_id": 4953606,
+              "selection_weight": 1
+            },
+            {
+              "id": 8244,
+              "outcome_id": 992,
+              "question_option_id": 4953606,
+              "selection_weight": 1
+            },
+            {
+              "id": 8245,
+              "outcome_id": 991,
+              "question_option_id": 4953606,
+              "selection_weight": 1
+            },
+            {
+              "id": 8246,
+              "outcome_id": 993,
+              "question_option_id": 4953606,
+              "selection_weight": 1
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    },
+    {
+      "display_order": 11,
+      "game_id": 14148,
+      "id": 139662,
+      "name": "Dogs are often a reflection of their owners. How would you describe yourself?",
+      "promotion_id": 13854,
+      "question_options": [
+        {
+          "display_order": 2,
+          "id": 4953559,
+          "is_correct": false,
+          "name": "All-American.",
+          "promotion_id": 13854,
+          "question_id": 139662,
+          "question_option_outcome_weights": [
+            {
+              "id": 7983,
+              "outcome_id": 983,
+              "question_option_id": 4953559,
+              "selection_weight": 5
+            },
+            {
+              "id": 7984,
+              "outcome_id": 989,
+              "question_option_id": 4953559,
+              "selection_weight": 2
+            },
+            {
+              "id": 7985,
+              "outcome_id": 984,
+              "question_option_id": 4953559,
+              "selection_weight": 5
+            },
+            {
+              "id": 7986,
+              "outcome_id": 985,
+              "question_option_id": 4953559,
+              "selection_weight": 2
+            },
+            {
+              "id": 7987,
+              "outcome_id": 986,
+              "question_option_id": 4953559,
+              "selection_weight": 3
+            },
+            {
+              "id": 7988,
+              "outcome_id": 993,
+              "question_option_id": 4953559,
+              "selection_weight": 2
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 4,
+          "id": 4953560,
+          "is_correct": false,
+          "name": "Athletic.",
+          "promotion_id": 13854,
+          "question_id": 139662,
+          "question_option_outcome_weights": [
+            {
+              "id": 7989,
+              "outcome_id": 983,
+              "question_option_id": 4953560,
+              "selection_weight": 5
+            },
+            {
+              "id": 7990,
+              "outcome_id": 984,
+              "question_option_id": 4953560,
+              "selection_weight": 5
+            },
+            {
+              "id": 7991,
+              "outcome_id": 987,
+              "question_option_id": 4953560,
+              "selection_weight": 5
+            },
+            {
+              "id": 7992,
+              "outcome_id": 989,
+              "question_option_id": 4953560,
+              "selection_weight": 5
+            },
+            {
+              "id": 7993,
+              "outcome_id": 988,
+              "question_option_id": 4953560,
+              "selection_weight": 4
+            },
+            {
+              "id": 7994,
+              "outcome_id": 993,
+              "question_option_id": 4953560,
+              "selection_weight": 5
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 3,
+          "id": 4953562,
+          "is_correct": false,
+          "name": "Fun.",
+          "promotion_id": 13854,
+          "question_id": 139662,
+          "question_option_outcome_weights": [
+            {
+              "id": 8005,
+              "outcome_id": 991,
+              "question_option_id": 4953562,
+              "selection_weight": 5
+            },
+            {
+              "id": 8006,
+              "outcome_id": 985,
+              "question_option_id": 4953562,
+              "selection_weight": 10
+            },
+            {
+              "id": 8007,
+              "outcome_id": 983,
+              "question_option_id": 4953562,
+              "selection_weight": 2
+            },
+            {
+              "id": 8008,
+              "outcome_id": 990,
+              "question_option_id": 4953562,
+              "selection_weight": 5
+            },
+            {
+              "id": 8009,
+              "outcome_id": 992,
+              "question_option_id": 4953562,
+              "selection_weight": 1
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 1,
+          "id": 4953563,
+          "is_correct": false,
+          "name": "Goofy.",
+          "promotion_id": 13854,
+          "question_id": 139662,
+          "question_option_outcome_weights": [
+            {
+              "id": 8010,
+              "outcome_id": 991,
+              "question_option_id": 4953563,
+              "selection_weight": 10
+            },
+            {
+              "id": 8011,
+              "outcome_id": 990,
+              "question_option_id": 4953563,
+              "selection_weight": 10
+            },
+            {
+              "id": 8012,
+              "outcome_id": 988,
+              "question_option_id": 4953563,
+              "selection_weight": 2
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 6,
+          "id": 4953566,
+          "is_correct": false,
+          "name": "Hard-working.",
+          "promotion_id": 13854,
+          "question_id": 139662,
+          "question_option_outcome_weights": [
+            {
+              "id": 8024,
+              "outcome_id": 984,
+              "question_option_id": 4953566,
+              "selection_weight": 5
+            },
+            {
+              "id": 8025,
+              "outcome_id": 987,
+              "question_option_id": 4953566,
+              "selection_weight": 4
+            },
+            {
+              "id": 8026,
+              "outcome_id": 989,
+              "question_option_id": 4953566,
+              "selection_weight": 5
+            },
+            {
+              "id": 8027,
+              "outcome_id": 993,
+              "question_option_id": 4953566,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 5,
+          "id": 4953586,
+          "is_correct": false,
+          "name": "Intelligent.",
+          "promotion_id": 13854,
+          "question_id": 139662,
+          "question_option_outcome_weights": [
+            {
+              "id": 8148,
+              "outcome_id": 983,
+              "question_option_id": 4953586,
+              "selection_weight": 3
+            },
+            {
+              "id": 8149,
+              "outcome_id": 984,
+              "question_option_id": 4953586,
+              "selection_weight": 5
+            },
+            {
+              "id": 8150,
+              "outcome_id": 987,
+              "question_option_id": 4953586,
+              "selection_weight": 4
+            },
+            {
+              "id": 8151,
+              "outcome_id": 989,
+              "question_option_id": 4953586,
+              "selection_weight": 3
+            },
+            {
+              "id": 8152,
+              "outcome_id": 993,
+              "question_option_id": 4953586,
+              "selection_weight": 10
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 7,
+          "id": 4953590,
+          "is_correct": false,
+          "name": "Laid-back.",
+          "promotion_id": 13854,
+          "question_id": 139662,
+          "question_option_outcome_weights": [
+            {
+              "id": 8158,
+              "outcome_id": 983,
+              "question_option_id": 4953590,
+              "selection_weight": 1
+            },
+            {
+              "id": 8159,
+              "outcome_id": 984,
+              "question_option_id": 4953590,
+              "selection_weight": 4
+            },
+            {
+              "id": 8160,
+              "outcome_id": 987,
+              "question_option_id": 4953590,
+              "selection_weight": 3
+            },
+            {
+              "id": 8161,
+              "outcome_id": 985,
+              "question_option_id": 4953590,
+              "selection_weight": 4
+            },
+            {
+              "id": 8162,
+              "outcome_id": 986,
+              "question_option_id": 4953590,
+              "selection_weight": 4
+            },
+            {
+              "id": 8163,
+              "outcome_id": 990,
+              "question_option_id": 4953590,
+              "selection_weight": 3
+            },
+            {
+              "id": 8164,
+              "outcome_id": 991,
+              "question_option_id": 4953590,
+              "selection_weight": 4
+            },
+            {
+              "id": 8165,
+              "outcome_id": 992,
+              "question_option_id": 4953590,
+              "selection_weight": 1
+            },
+            {
+              "id": 8166,
+              "outcome_id": 988,
+              "question_option_id": 4953590,
+              "selection_weight": 4
+            }
+          ],
+          "status_type_id": 1
+        },
+        {
+          "display_order": 8,
+          "id": 4953598,
+          "is_correct": false,
+          "name": "Quiet.",
+          "promotion_id": 13854,
+          "question_id": 139662,
+          "question_option_outcome_weights": [
+            {
+              "id": 8188,
+              "outcome_id": 988,
+              "question_option_id": 4953598,
+              "selection_weight": 3
+            },
+            {
+              "id": 8189,
+              "outcome_id": 992,
+              "question_option_id": 4953598,
+              "selection_weight": 2
+            }
+          ],
+          "status_type_id": 1
+        }
+      ],
+      "status_type_id": 1
+    }
+  ]
+}
