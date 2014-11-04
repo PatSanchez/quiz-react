@@ -26,9 +26,34 @@
 <body>
 <div id="ssFrontApp" class="ssPersonalityQuiz"></div>
 <script type="text/jsx">
+    var quizSubmission;
+    var headers = {
+        'X-Organization-Promotion-Id': 13854,
+        'X-Referring-Url': 'https://embed-13854.secondstreetapp.com/embed/d4b26171-8fd2-4439-b574-96ab9ca5cae3/',
+        'Content-Type': 'application/json; charset=UTF-8',
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'X-Organization-Id': 5403,
+        'X-Promotion-Id': 13854,
+        'X-Api-Key': 65032887
+    };
     var Quiz = React.createClass({
         getInitialState: function() {
             return {data: []};
+        },
+        submitQuiz: function(qs){
+            $.ajax({
+                type: 'POST',
+                url: 'https://embed-13854.secondstreetapp.com/api/quiz_submissions',
+                dataType: 'json',
+                data: qs,
+                headers: headers,
+                success: function(data) {
+                    console.log(data);
+                }.bind(this),
+                error: function(xhr, status, err) {
+                    console.error(this.props.url, status, err.toString());
+                }.bind(this)
+            });
         },
         componentDidMount: function() {
             $.ajax({
@@ -36,6 +61,21 @@
                 dataType: 'json',
                 success: function(data) {
                     this.setState({data: data});
+                    //Set up the quiz submission with initial data
+                    quizSubmission = {
+                        "quiz_submissions": [
+                            {
+                                "question_option_picks":[]
+                            }
+                        ]
+                    };
+                    data.questions.forEach(function(question){
+                        quizSubmission.quiz_submissions[0].question_option_picks.push({
+                            question_id: question.id,
+                            question_option_id: null,
+                            quiz_submission_id: null
+                        })
+                    });
                 }.bind(this),
                 error: function(xhr, status, err) {
                     console.error(this.props.url, status, err.toString());
@@ -44,8 +84,17 @@
         },
         render: function(){
             var calculateResults = function(){
-                console.log('Calculating Results');
-            };
+                var isQuizComplete = !quizSubmission.quiz_submissions[0].question_option_picks.filter(function(pick){
+                    return !pick.question_option_id;
+                }).length;
+                if(isQuizComplete){
+                    this.submitQuiz(JSON.stringify(quizSubmission));
+                }
+                else {
+                    alert('You have not yet completed the quiz');
+                }
+
+            }.bind(this);
             return (
 
                 <div className="ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined">
@@ -73,7 +122,7 @@
             if(this.props.data){ //Handle if the data hasn't loaded yet
                 var questionNodes = this.props.data.map(function (question) {
                     return (
-                        <Question name={question.name} displayOrder={question.display_order} questionOptions={question.question_options}>
+                        <Question id={question.id} name={question.name} displayOrder={question.display_order} questionOptions={question.question_options}>
                         </Question>
                     );
                 });
@@ -99,7 +148,7 @@
                             </h2>
                         </div>
                     </div>
-                    <QuestionOptionsList data={this.props.questionOptions} />
+                    <QuestionOptionsList data={this.props.questionOptions} questionId={this.props.id} />
                 </div>
             )
         }
@@ -111,6 +160,12 @@
         render: function(){
             var setPicked = function(qo){
                 this.setState({picked: qo});
+                var submissionPicks = quizSubmission.quiz_submissions[0].question_option_picks;
+                var pickToChange = submissionPicks.filter(function(pick){
+                    return pick.question_id === this.props.questionId;
+                }.bind(this))[0];
+                pickToChange.question_option_id = qo.props.id;
+
             }.bind(this);
             var questionOptionNodes = this.props.data.map(function (questionOption) {
                 if(this.state.picked && this.state.picked.props.id === questionOption.id){
