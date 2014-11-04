@@ -21,6 +21,9 @@
         #ssFrontApp.ssPersonalityQuiz .ssQuiz {
             border-bottom: 0;
         }
+        #ssFrontApp .ssSubmissionError {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +41,7 @@
     };
     var Quiz = React.createClass({
         getInitialState: function() {
-            return {data: []};
+            return {questionData: [], outcomeData: null, submitError: null};
         },
         submitQuiz: function(qs){
             $.ajax({
@@ -49,6 +52,7 @@
                 headers: headers,
                 success: function(data) {
                     console.log(data);
+                    this.setState({outcomeData: data.quiz_submissions[0].outcome_id})
                 }.bind(this),
                 error: function(xhr, status, err) {
                     console.error(this.props.url, status, err.toString());
@@ -60,7 +64,7 @@
                 url: this.props.url,
                 dataType: 'json',
                 success: function(data) {
-                    this.setState({data: data});
+                    this.setState({questionData: data});
                     //Set up the quiz submission with initial data
                     quizSubmission = {
                         "quiz_submissions": [
@@ -91,20 +95,32 @@
                     this.submitQuiz(JSON.stringify(quizSubmission));
                 }
                 else {
-                    alert('You have not yet completed the quiz');
+                    this.setState({submitError: 'You have not answered all questions'});
                 }
 
             }.bind(this);
-            return (
+            var errors = this.state.submitError ? <p className="ssSubmissionError">{this.state.submitError}</p> : null;
 
-                <div className="ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined">
-                    <div className="ssQuiz">
-                        <QuestionList data={this.state.data.questions}/>
-                        <SubmitButton submit={calculateResults}/>
+            var renderContents;
+            if(this.state.outcomeData){
+                renderContents = (
+                    <div className="ssOutcome">
+                        You Got Outcome #{this.state.outcomeData}
                     </div>
-                </div>
-
-            )
+                );
+            }
+            else {
+                renderContents = (
+                    <div className="ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined">
+                        <div className="ssQuiz">
+                            <QuestionList data={this.state.questionData.questions}/>
+                            {errors}
+                            <SubmitButton submit={calculateResults}/>
+                        </div>
+                    </div>
+                );
+            }
+            return renderContents;
         }
     });
 
