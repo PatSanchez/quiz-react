@@ -52,7 +52,21 @@
                 headers: headers,
                 success: function(data) {
                     console.log(data);
-                    this.setState({outcomeData: data.quiz_submissions[0].outcome_id})
+                    this.getOutcomeById(data.quiz_submissions[0].outcome_id);
+                }.bind(this),
+                error: function(xhr, status, err) {
+                    console.error(this.props.url, status, err.toString());
+                }.bind(this)
+            });
+        },
+        getOutcomeById: function(outcomeId){
+            $.ajax({
+                type: 'GET',
+                url: 'https://embed-13854.secondstreetapp.com/api/outcomes/' + outcomeId,
+                dataType: 'json',
+                headers: headers,
+                success: function(data) {
+                    this.setState({outcomeData: data.outcomes[0]});
                 }.bind(this),
                 error: function(xhr, status, err) {
                     console.error(this.props.url, status, err.toString());
@@ -63,6 +77,7 @@
             $.ajax({
                 url: this.props.url,
                 dataType: 'json',
+                headers: headers,
                 success: function(data) {
                     this.setState({questionData: data});
                     //Set up the quiz submission with initial data
@@ -105,7 +120,7 @@
             if(this.state.outcomeData){
                 renderContents = (
                     <div className="ssOutcome">
-                        You Got Outcome #{this.state.outcomeData}
+                        You Got {this.state.outcomeData.name}
                     </div>
                 );
             }
@@ -136,6 +151,15 @@
 
         render: function(){
             if(this.props.data){ //Handle if the data hasn't loaded yet
+                this.props.data.sort(function(a, b){
+                    if (a.display_order < b.display_order){
+                        return -1;
+                    }
+                    if (a.display_order > b.display_order) {
+                        return 1;
+                    }
+                    return 0;
+                });
                 var questionNodes = this.props.data.map(function (question) {
                     return (
                         <Question id={question.id} name={question.name} displayOrder={question.display_order} questionOptions={question.question_options}>
@@ -183,6 +207,15 @@
                 pickToChange.question_option_id = qo.props.id;
 
             }.bind(this);
+            this.props.data.sort(function(a, b){
+                if (a.display_order < b.display_order){
+                    return -1;
+                }
+                if (a.display_order > b.display_order) {
+                    return 1;
+                }
+                return 0;
+            });
             var questionOptionNodes = this.props.data.map(function (questionOption) {
                 if(this.state.picked && this.state.picked.props.id === questionOption.id){
                     return (
@@ -229,7 +262,7 @@
         }
     });
     React.render(
-        <Quiz url="questions.json" />,
+        <Quiz url="https://embed-13854.secondstreetapp.com/api/questions?sideloadSubObjects=false" />,
         document.getElementById('ssFrontApp')
     );
 </script>
