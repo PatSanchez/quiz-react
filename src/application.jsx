@@ -1,5 +1,5 @@
 (function(){
-  var quizSubmission, orgPromoId, promoId, ordId, headers, Quiz, SubmitButton, QuestionList, Question,
+  var quizSubmission, orgPromoId, promoId, orgId, headers, Quiz, SubmitButton, QuestionList, Question,
     QuestionOptionsList, QuestionOption;
 
   orgPromoId = 13854;
