@@ -24,6 +24,9 @@
         #ssFrontApp .ssSubmissionError {
             text-align: center;
         }
+        #ssFrontApp.ssPersonalityQuiz .ssOutcome .ssOutcomeSecondary .ssButtonRetake {
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +44,7 @@
     };
     var Quiz = React.createClass({
         getInitialState: function() {
-            return {questionData: [], outcomeData: null, submitError: null};
+            return {questionData: [], outcomeData: null, submitError: null, loading: true};
         },
         submitQuiz: function(qs){
             $.ajax({
@@ -51,7 +54,6 @@
                 data: qs,
                 headers: headers,
                 success: function(data) {
-                    console.log(data);
                     this.getOutcomeById(data.quiz_submissions[0].outcome_id);
                 }.bind(this),
                 error: function(xhr, status, err) {
@@ -95,6 +97,7 @@
                             quiz_submission_id: null
                         })
                     });
+                    this.setState({loading: false});
                 }.bind(this),
                 error: function(xhr, status, err) {
                     console.error(this.props.url, status, err.toString());
@@ -114,28 +117,68 @@
                 }
 
             }.bind(this);
+            var retakeQuiz = function(){
+                window.location.reload();
+            };
             var errors = this.state.submitError ? <p className="ssSubmissionError">{this.state.submitError}</p> : null;
 
-            var renderContents;
-            if(this.state.outcomeData){
-                renderContents = (
-                    <div className="ssOutcome">
-                        You Got {this.state.outcomeData.name}
-                    </div>
-                );
+            var mainContent;
+            var headerText = this.state.outcomeData ? 'Results' : 'Quiz';
+            if(!this.state.loading){
+                if(this.state.outcomeData){
+                    mainContent = (
+                            <div className="ssOutcome ssMainContent">
+                                <div className="ssOutcomeFeature ssTile">
+                                    <h2 className="ssOutcomeHeader ssTileHeader">{this.state.outcomeData.name}</h2>
+                                </div>
+                                <div className="ssOutcomeSecondary">
+                                    <div className="ssOutcomeRetake ssTile">
+                                        <div className="ssTileContent">
+                                            <h3 className="ssOutcomePrompt">Not the result you expected?</h3>
+                                        </div>
+                                        <button className="ssButton ssButtonTileFooter ssButtonRetake" onClick={retakeQuiz}>
+                                        Retake Quiz
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    );
+                }
+                else {
+                    mainContent = (
+                            <div className="ssQuizInterior">
+                                <QuestionList data={this.state.questionData.questions}/>
+                        {errors}
+                                <SubmitButton submit={calculateResults}/>
+                            </div>
+                    );
+                }
+                return (
+                        <div className="ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined">
+                            <div className="ssQuiz">
+                                <div className="ssQuestionProgressCallout">
+                                    <div className="ssQuestionProgressCalloutFeature">
+                                        <h2>{headerText}</h2>
+                                    </div>
+                                </div>
+                            {mainContent}
+                            </div>
+                        </div>
+                )
             }
             else {
-                renderContents = (
+                return (
                     <div className="ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined">
                         <div className="ssQuiz">
-                            <QuestionList data={this.state.questionData.questions}/>
-                            {errors}
-                            <SubmitButton submit={calculateResults}/>
+                            <div className="ssQuestionProgressCallout">
+                                <div className="ssQuestionProgressCalloutFeature">
+                                    <h2>{headerText}</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                );
+                )
             }
-            return renderContents;
         }
     });
 
