@@ -126,10 +126,14 @@
             var headerText = this.state.outcomeData ? 'Results' : 'Quiz';
             if(!this.state.loading){
                 if(this.state.outcomeData){
+                    var description = this.state.outcomeData.description ? (<div className="ssTileContent">
+                        <p className="ssOutcomeDescription">{this.state.outcomeData.description}</p>
+                    </div>) : '';
                     mainContent = (
                             <div className="ssOutcome ssMainContent">
                                 <div className="ssOutcomeFeature ssTile">
                                     <h2 className="ssOutcomeHeader ssTileHeader">{this.state.outcomeData.name}</h2>
+                                    {description}
                                 </div>
                                 <div className="ssOutcomeSecondary">
                                     <div className="ssOutcomeRetake ssTile">
