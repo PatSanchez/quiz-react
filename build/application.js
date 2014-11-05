@@ -90,6 +90,13 @@
 
     //region Render
     render: function(){
+      var cx = React.addons.classSet;
+      var appContentAreaClasses = cx({
+        'ssAppContentArea': true,
+        'ssLayoutDetermined': true,
+        'ssLayoutMedium': window.innerWidth >= 640,
+        'ssLayoutLarge': window.innerWidth >= 810
+      });
       var calculateResults, retakeQuiz, errors, mainContent, headerText;
       calculateResults = function(){
         var isQuizComplete = !quizSubmission.quiz_submissions[0].question_option_picks.filter(function(pick){
@@ -151,7 +158,7 @@
 
         //Now that we know what the main content is, render the application
         return (
-          React.createElement("div", {className: "ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined"}, 
+          React.createElement("div", {className: appContentAreaClasses}, 
             React.createElement("div", {className: "ssQuiz"}, 
               React.createElement("div", {className: "ssQuestionProgressCallout"}, 
                 React.createElement("div", {className: "ssQuestionProgressCalloutFeature"}, 
@@ -167,7 +174,7 @@
       //If the application is in a loading state, just render the bones of it for a smoother load
       else {
         return (
-          React.createElement("div", {className: "ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined"}, 
+          React.createElement("div", {className: appContentAreaClasses}, 
             React.createElement("div", {className: "ssQuiz"}, 
               React.createElement("div", {className: "ssQuestionProgressCallout"}, 
                 React.createElement("div", {className: "ssQuestionProgressCalloutFeature"}, 
