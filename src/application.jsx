@@ -106,7 +106,7 @@
             <div className="ssOutcome ssMainContent">
               <div className="ssOutcomeFeature ssTile">
                 <h2 className="ssOutcomeHeader ssTileHeader" dangerouslySetInnerHTML={{__html: this.state.outcomeData.name}}></h2>
-                                            {description}
+                {description}
               </div>
               <div className="ssOutcomeSecondary">
                 <div className="ssOutcomeRetake ssTile">
@@ -125,7 +125,7 @@
           mainContent = (
             <div className="ssQuizInterior">
               <QuestionList data={this.state.questionData.questions}/>
-                                {errors}
+              {errors}
               <SubmitButton submit={calculateResults}/>
             </div>
           );
@@ -138,7 +138,7 @@
                   <h2>{headerText}</h2>
                 </div>
               </div>
-                                    {mainContent}
+              {mainContent}
             </div>
           </div>
         )
@@ -191,7 +191,7 @@
 
       return (
         <div className="ssQuestions ssMainContent">
-                            {questionNodes}
+          {questionNodes}
         </div>
       )
     }
@@ -206,7 +206,6 @@
               <h2 className="ssVerticalCenterTableRow ssQuestionTitle">
                 <span className="ssVerticalCenterTableData ssQuestionNumber">#{this.props.displayOrder}</span>
                 <span className="ssVerticalCenterTableData ssQuestionName">{this.props.name}</span>
-
               </h2>
             </div>
           </div>
@@ -254,7 +253,7 @@
       return (
         <div className="ssQuestionOptions">
           <ul className="ssThumbnailGrid">
-                                {questionOptionNodes}
+            {questionOptionNodes}
           </ul>
         </div>
       )
@@ -275,7 +274,7 @@
               <div className="ssVerticalCenterTable">
                 <div className="ssVerticalCenterTableRow">
                   <div className="ssVerticalCenterTableData">
-                                                {this.props.name}
+                    {this.props.name}
                   </div>
                 </div>
               </div>
