@@ -192,6 +192,49 @@ var GroceryList = React.createClass({
 				<section>
 					<h1>#3<br/>Touch the<br/>DOM as little<br/>as possible</h1>
 				</section>
+
+				<section>
+					<h2>The DOM is SLOW</h2>
+					<p>DOM interactions are one of the most common bottlenecks of single page apps</p>
+				</section>
+
+				<section>
+					<h2>The Virtual DOM</h2>
+					<p>A representation of how the DOM should look in javascript</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>On every update React...</h2>
+						<ol>
+							<li class="fragment">...builds a new virtual DOM subtree</li>
+							<li class="fragment">...diffs it with the old one</li>
+							<li class="fragment">...computes the minimal set of DOM changes<br/>and queues them</li>
+							<li class="fragment">...and batch executes all changes</li>
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<h2>Interesting benefits</h2>
+					<ul>
+						<li>Can be run on the server</li>
+						<li>Much easier to automated test</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo time!</h1>
+					<p>
+						<a target="_blank" href="http://sanchezmedia.secondstreetapp.com/aux/Pat/quiz.html" style="margin-bottom:8px;display: block;">Personality Quizzes on React</a>
+						<small>
+							<a target="_blank" href="https://github.com/PatSanchez/quiz-react" style="vertical-align: middle;line-height:48px;margin-left:-32px;display:block;">
+								<img style="border:0;vertical-align: middle;background: transparent;margin-right:5px;margin-top:10px;" src="GitHub-Mark-Light-32px.png" alt="GitHub">
+								<span>GitHub</span>
+							</a>
+						</small>
+					</p>
+				</section>
 			</div>
 
 		</div>
