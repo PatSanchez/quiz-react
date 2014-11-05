@@ -1,0 +1,22 @@
+html {
+    background-color: #e5e5e5;
+}
+#ssFrontApp.ssPersonalityQuiz .ssQuestion .ssQuestionHeader .ssVerticalCenterTable {
+    height: auto;
+}
+#ssFrontApp.ssPersonalityQuiz .ssButton.ssCalculateResultsButton {
+    margin: 0 auto;
+    display: block;
+}
+#ssFrontApp.ssPersonalityQuiz .ssQuiz {
+    border-bottom: 0;
+}
+#ssFrontApp .ssSubmissionError {
+    text-align: center;
+}
+#ssFrontApp.ssPersonalityQuiz .ssOutcome .ssOutcomeSecondary .ssButtonRetake {
+    height: auto;
+}
+#ssFrontApp .ssQuestion {
+    margin-bottom: 4em;
+}
