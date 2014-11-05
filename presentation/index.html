@@ -113,11 +113,34 @@ var items = [
 					Template
 					<pre><code data-trim contenteditable>
 {{#each items}}
-	{{name}} - {{quantity}}
+	<div>{{name}} - {{quantity}} @ $ {{price}}</div>
 {{/each}}
 
 {{!--Where does this come from?? --}}
-Total Price: {{totalPrice}}
+<p>Total Price: {{totalPrice}}</p>
+					</code> </pre>
+				</section>
+				<section>
+					<h2>In react...</h2>
+
+					Component
+					<pre><code data-trim contenteditable>
+var GroceryList = React.createClass({
+    render: function(){
+        var groceries = this.props.data.map(function (item) {
+            return (
+                <div>{item.name} - {item.quantity} @ ${item.price}</div>;
+            );
+        }.bind(this);
+        var totalPrice = this.props.data.reduce(function(prev, current){
+            return prev + current;
+        });
+        return (
+            {groceries}
+            <p>Total Price: {totalPrice}</p>
+        );
+    })
+});
 					</code> </pre>
 				</section>
 			</div>
