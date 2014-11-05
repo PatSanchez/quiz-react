@@ -1,7 +1,9 @@
+/*globals $, React*/
 (function(){
   var quizSubmission, orgPromoId, promoId, orgId, headers, Quiz, SubmitButton, QuestionList, Question,
     QuestionOptionsList, QuestionOption;
 
+  //region Promotion Setup
   orgPromoId = 13854;
   promoId = 13854;
   orgId = 5403;
@@ -14,39 +16,14 @@
     'X-Promotion-Id': promoId,
     'X-Api-Key': 65032887
   };
+  //endregion
 
+  //region React Components
   Quiz = React.createClass({displayName: 'Quiz',
+
+    //region React Lifecycle Hooks
     getInitialState: function() {
       return {questionData: [], outcomeData: null, submitError: null, loading: true};
-    },
-    submitQuiz: function(qs){
-      $.ajax({
-        type: 'POST',
-        url: 'https://embed-13854.secondstreetapp.com/api/quiz_submissions',
-        dataType: 'json',
-        data: qs,
-        headers: headers,
-        success: function(data) {
-          this.getOutcomeById(data.quiz_submissions[0].outcome_id);
-        }.bind(this),
-        error: function(xhr, status, err) {
-          console.error(this.props.url, status, err.toString());
-        }.bind(this)
-      });
-    },
-    getOutcomeById: function(outcomeId){
-      $.ajax({
-        type: 'GET',
-        url: 'https://embed-13854.secondstreetapp.com/api/outcomes/' + outcomeId,
-        dataType: 'json',
-        headers: headers,
-        success: function(data) {
-          this.setState({outcomeData: data.outcomes[0]});
-        }.bind(this),
-        error: function(xhr, status, err) {
-          console.error(this.props.url, status, err.toString());
-        }.bind(this)
-      });
     },
     componentDidMount: function() {
       $.ajax({
@@ -77,8 +54,44 @@
         }.bind(this)
       });
     },
+    //endregion
+
+    //region Custom Methods
+    submitQuiz: function(qs){
+      $.ajax({
+        type: 'POST',
+        url: 'https://embed-13854.secondstreetapp.com/api/quiz_submissions',
+        dataType: 'json',
+        data: qs,
+        headers: headers,
+        success: function(data) {
+          this.getOutcomeById(data.quiz_submissions[0].outcome_id);
+        }.bind(this),
+        error: function(xhr, status, err) {
+          console.error(this.props.url, status, err.toString());
+        }.bind(this)
+      });
+    },
+    getOutcomeById: function(outcomeId){
+      $.ajax({
+        type: 'GET',
+        url: 'https://embed-13854.secondstreetapp.com/api/outcomes/' + outcomeId,
+        dataType: 'json',
+        headers: headers,
+        success: function(data) {
+          this.setState({outcomeData: data.outcomes[0]});
+        }.bind(this),
+        error: function(xhr, status, err) {
+          console.error(this.props.url, status, err.toString());
+        }.bind(this)
+      });
+    },
+    //endregion
+
+    //region Render
     render: function(){
-      var calculateResults = function(){
+      var calculateResults, retakeQuiz, errors, mainContent, headerText;
+      calculateResults = function(){
         var isQuizComplete = !quizSubmission.quiz_submissions[0].question_option_picks.filter(function(pick){
           return !pick.question_option_id;
         }).length;
@@ -90,14 +103,19 @@
         }
 
       }.bind(this);
-      var retakeQuiz = function(){
+
+      retakeQuiz = function(){
         window.location.reload();
       };
-      var errors = this.state.submitError ? React.createElement("p", {className: "ssSubmissionError"}, this.state.submitError) : null;
 
-      var mainContent;
-      var headerText = this.state.outcomeData ? 'Results' : 'Quiz';
+      errors = this.state.submitError ? React.createElement("p", {className: "ssSubmissionError"}, this.state.submitError) : null;
+
+      headerText = this.state.outcomeData ? 'Results' : 'Quiz';
+
+      //If we're not loading, render the application with content
       if(!this.state.loading){
+
+        //Determining what the main content should be based on what data is in state
         if(this.state.outcomeData){
           var description = this.state.outcomeData.description ? (React.createElement("div", {className: "ssTileContent"}, 
             React.createElement("p", {className: "ssOutcomeDescription", dangerouslySetInnerHTML: {__html: this.state.outcomeData.description}})
@@ -130,6 +148,8 @@
             )
           );
         }
+
+        //Now that we know what the main content is, render the application
         return (
           React.createElement("div", {className: "ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined"}, 
             React.createElement("div", {className: "ssQuiz"}, 
@@ -143,6 +163,8 @@
           )
         )
       }
+
+      //If the application is in a loading state, just render the bones of it for a smoother load
       else {
         return (
           React.createElement("div", {className: "ssAppContentArea ssLayoutMedium ssLayoutLarge ssLayoutDetermined"}, 
@@ -157,21 +179,29 @@
         )
       }
     }
+    //endregion
   });
 
   SubmitButton = React.createClass({displayName: 'SubmitButton',
+
+    //region Render
     render: function(){
       return (
         React.createElement("button", {className: "ssCalculateResultsButton ssButtonPrimary ssButton", onClick: this.props.submit}, "Submit")
       )
     }
+    //endregion
+
   });
 
   QuestionList = React.createClass({displayName: 'QuestionList',
 
+    //region Render
     render: function(){
       var questionNodes;
-      if(this.props.data){ //Handle if the data hasn't loaded yet
+
+      //If we have data (a list of questions) then sort it and build the html we're going to use as questionNodes
+      if(this.props.data){
         this.props.data.sort(function(a, b){
           if (a.display_order < b.display_order){
             return -1;
@@ -189,15 +219,20 @@
         });
       }
 
+      //Render each question inside of a container
       return (
         React.createElement("div", {className: "ssQuestions ssMainContent"}, 
           questionNodes
         )
       )
     }
+    //endregion
+
   });
 
   Question = React.createClass({displayName: 'Question',
+
+    //region Render
     render: function(){
       return (
         React.createElement("div", {className: "ssQuestion"}, 
@@ -213,12 +248,19 @@
         )
       )
     }
+    //endregion
+
   });
 
   QuestionOptionsList = React.createClass({displayName: 'QuestionOptionsList',
+
+    //region React Lifecycle Hooks
     getInitialState: function() {
       return {picked: null};
     },
+    //endregion
+
+    //region Render
     render: function(){
       var setPicked = function(qo){
         this.setState({picked: qo});
@@ -258,9 +300,12 @@
         )
       )
     }
+    //endregion
   });
 
   QuestionOption = React.createClass({displayName: 'QuestionOption',
+
+    //region Render
     render: function(){
       var cx = React.addons.classSet;
       var classes = cx({
@@ -283,10 +328,16 @@
         )
       )
     }
-  });
+    //endregion
 
+  });
+  //endregion
+
+  //region Application Rendering
   React.render(
     React.createElement(Quiz, {url: "https://embed-13854.secondstreetapp.com/api/questions?sideloadSubObjects=false"}),
     document.getElementById('ssFrontApp')
   );
+  //endregion
+
 })();
