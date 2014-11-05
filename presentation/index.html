@@ -46,8 +46,22 @@
 					<h1>React JS</h1>
 					<h3>Give it 5 minutes</h3>
 					<p>
-						<small>Created by <a href="mailto:pat@secondstreet.com">Pat Sanchez</a></small>
+						<small>Presentation by <a href="mailto:pat@secondstreet.com">Pat Sanchez</a></small>
 					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Give it 5 minutes?</h2>
+						<p class="fragment">
+							There's a good chance you'll instantly hate this.
+						</p>
+						<aside class="notes">
+							Reference to a story Jason Fried (Basecamp Founder) told about an interaction with
+							Richard Saul, co-founder of TED
+						</aside>
+					</section>
+
 				</section>
 
 				<section>
@@ -74,7 +88,11 @@
 				</section>
 
 				<section>
-					<h2>1. Reduce Coupling</h2>
+					<h1>#1 <br/>Reduce Coupling<br/>Increase Cohesion</h1>
+				</section>
+
+				<section>
+					<h2>Reduce Coupling</h2>
 					<p>
 						<strong>Coupling</strong> - Interdependence between discrete units of code<br/>
 						<small><em>How often do I break something when I make a change somewhere else in the code?</em></small>
@@ -82,7 +100,7 @@
 				</section>
 
 				<section>
-					<h2>1. Increase Cohesion</h2>
+					<h2>Increase Cohesion</h2>
 					<p>
 						<strong>Cohesion</strong> - Relationship of items within discrete units of code<br/>
 						<small><em>Do I have to reference a dozen files to understand what's happening?</em></small>
@@ -90,7 +108,7 @@
 				</section>
 
 				<section>
-					<h2>1. Components, NOT Templates</h2>
+					<h2>Components, NOT Templates</h2>
 					<p>
 						Templates separate <em>technologies</em>, not <em>concerns</em>
 					</p>
@@ -142,6 +160,37 @@ var GroceryList = React.createClass({
     })
 });
 					</code> </pre>
+				</section>
+
+				<section>
+					<h1>#2<br/>Re-render<br/>don't mutate</h1>
+				</section>
+
+				<section>
+					<h2>React's Special Sauce</h2>
+					<p>
+						Any time any of your data changes <em>the entire application re-renders</em>
+					</p>
+				</section>
+
+				<section>
+					<h2>Why?</h2>
+					<p>
+						<blockquote>
+							"Our intellectual powers are rather geared to master static relations [but]
+							our powers to visualize processes evolving in time are relatively poorly
+							developed."<br/>
+							<cite>- Edsger W. Dijkstra via Pete Hunt</cite>
+						</blockquote>
+					</p>
+				</section>
+
+				<section>
+					<h3>Fine, but isn't that inefficient?</h3>
+				</section>
+
+				<section>
+					<h1>#3<br/>Touch the<br/>DOM as little<br/>as possible</h1>
 				</section>
 			</div>
 
