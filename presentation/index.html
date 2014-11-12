@@ -147,7 +147,7 @@ var GroceryList = React.createClass({
     render: function(){
         var groceries = this.props.data.map(function (item) {
             return (
-                <div>{item.name} - {item.quantity} @ ${item.price}</div>;
+                <div>{item.name} - {item.quantity} @ ${item.price}</div>
             );
         }.bind(this);
         var totalPrice = this.props.data.reduce(function(prev, current){
