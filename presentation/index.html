@@ -151,7 +151,7 @@ var GroceryList = React.createClass({
             );
         }.bind(this);
         var totalPrice = this.props.data.reduce(function(prev, current){
-            return prev + current;
+            return prev.price + current.price;
         });
         return (
             {groceries}
